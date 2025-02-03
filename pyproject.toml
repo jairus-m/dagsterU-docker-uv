@@ -1,6 +1,36 @@
+[project]
+name = "dagster_university"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+        "dagster==1.9.*",
+        "dagster-cloud",
+        "dagster-duckdb",
+        "geopandas",
+        "kaleido==0.2.1",
+        "pandas[parquet]",
+        "plotly",
+        "shapely",
+]
+
+[project.optional-dependencies]
+dev = [
+    "dagster-webserver", 
+    "pytest",
+    "debugpy",
+    "ruff",
+    "pre-commit"
+]
+
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [tool.dagster]
 module_name = "dagster_university"
+project_name = "dagster_university"
+
+[tool.setuptools.packages.find]
+exclude=["dagster_university_tests"]
