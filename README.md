@@ -1,6 +1,9 @@
 # Dagster University
 
-This is a [Dagster](https://dagster.io/) project made to accompany Dagster University coursework. The branches of this repository contain projects for different Dagster University courses:
+This is a forked [Dagster](https://dagster.io/) project made to accompany Dagster University coursework. The difference with this fork is that it uses `uv` for Python package management and has a `Dockerfile` to build a Docker image and run a container for local development. This repository accompanies a write-up and instructions to follow along.
+- [Docker & uv: A Streamlined Approach to Managing Local Dagster Environments ](https://medium.com/@jairus-m/docker-uv-a-streamlined-approach-to-managing-local-dagster-environments-dd55e0e90b3a)
+
+## Branches 
 
 | Branch name | Description |
 |-------------|-------------|
@@ -8,13 +11,9 @@ This is a [Dagster](https://dagster.io/) project made to accompany Dagster Unive
 | `module/dagster-and-dbt` | [Dagster + dbt](https://courses.dagster.io/courses/dagster-dbt) finished project |
 | `module/dagster-and-dbt-starter` | Starter project for [Dagster + dbt](https://courses.dagster.io/courses/dagster-dbt) |
 
-## Getting started
+## Getting Started
 
-First, install your Dagster code location as a Python package. By using the --editable flag, pip will install your Python package in ["editable mode"](https://pip.pypa.io/en/latest/topics/local-project-installs/#editable-installs) so that as you develop, local code changes will automatically apply.
-
-```bash
-pip install -e ".[dev]"
-```
+#### Once in the Docker Container, within VS Code:
 
 Duplicate the `.env.example` file and rename it to `.env`. Then, fill in the values for the environment variables in the file.
 
