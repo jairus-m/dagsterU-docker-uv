@@ -32,7 +32,7 @@ Open http://localhost:3000 with your browser to see the project.
 
 ### Adding new Python dependencies
 
-You can specify new Python dependencies in `setup.py`.
+You can specify new Python dependencies with `uv` via `uv add <python-package>`
 
 ### Unit testing
 
